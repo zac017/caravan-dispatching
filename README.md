@@ -2,8 +2,9 @@
 
 Static one-page site (HTML + CSS + JS, no build step).
 
-## Deploy
-1. Push this folder to a GitHub repository.
-2. In Vercel: Add New > Project > import the repo.
-3. Framework Preset: **Other**. Build Command: empty. Output Directory: empty (root).
-4. Deploy. Every `git push` to `main` redeploys automatically.
+Files (all in the repository root):
+- index.html, the whole site
+- logo.png, truck.jpg, og-image.png, images
+- vercel.json, hosting settings
+
+Deploy: push to GitHub, import the repo in Vercel (Framework Preset: Other). Every push to `main` redeploys automatically.
