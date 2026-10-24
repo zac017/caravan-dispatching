@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caravan Dispatching LLC | US Freight Dispatching for Owner-Operators & Fleets</title>
+<meta name="description" content="Caravan Dispatching LLC: precision load matching, broker rate negotiation, paperwork and 24/7 driver support for US owner-operators and fleets.">
+<meta property="og:title" content="Caravan Dispatching LLC">
+<meta property="og:description" content="Precision load matching, aggressive rate negotiation and 24/7 operational support for US carriers.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0a111e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a111e'/%3E%3Cpath d='M14 40h26V22H14zM40 28h10l6 8v4H40z' fill='%2310b981'/%3E%3Ccircle cx='24' cy='44' r='5' fill='%2306b6d4'/%3E%3Ccircle cx='46' cy='44' r='5' fill='%2306b6d4'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#0a111e; --bg2:#0e1829; --card:#131f35; --green:#10b981; --cyan:#06b6d4;
+  --text:#e2e8f0; --muted:#94a3b8; --line:rgba(16,185,129,.22); --radius:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,92%);margin-inline:auto}
+section{padding:96px 0}
+.tag{display:block;color:var(--green);font-size:.8rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+h2{font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.2;color:#fff;margin-bottom:14px}
+.lead{color:var(--muted);max-width:680px;font-size:1.05rem;margin-bottom:44px}
+
+/* Header */
+header{position:sticky;top:0;z-index:50;background:rgba(10,17,30,.8);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{font-weight:800;letter-spacing:.5px;color:#fff}
+.brand span{color:var(--green)}
+nav ul{display:flex;gap:28px;list-style:none;align-items:center}
+nav a{color:var(--muted);font-weight:600;font-size:.95rem;transition:color .2s}
+nav a:hover{color:var(--green)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:8px 12px;border-radius:8px;font-size:1rem;cursor:pointer}
+
+/* Buttons */
+.btn{display:inline-block;padding:13px 26px;border-radius:10px;font-weight:700;border:1px solid transparent;transition:transform .2s,background .2s,box-shadow .2s}
+.btn-primary{background:var(--green);color:#04120d}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(16,185,129,.35)}
+.btn-ghost{border-color:var(--line);color:var(--text)}
+.btn-ghost:hover{border-color:var(--green);color:var(--green)}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;padding:110px 0 96px}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;filter:blur(110px);z-index:0}
+.hero::before{width:420px;height:420px;background:rgba(16,185,129,.18);top:-120px;left:-100px}
+.hero::after{width:380px;height:380px;background:rgba(6,182,212,.14);bottom:-140px;right:-80px}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.4rem,6vw,4.1rem);line-height:1.08;font-weight:800;margin-bottom:20px;background:linear-gradient(135deg,#fff 0%,var(--cyan) 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero p.sub{color:var(--muted);font-size:1.15rem;max-width:560px;margin-bottom:32px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.cred{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:0 20px 50px rgba(0,0,0,.4)}
+.cred h3{color:var(--green);font-size:.8rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
+.cred li{list-style:none;padding:12px 0;border-bottom:1px solid rgba(148,163,184,.12);display:flex;flex-direction:column}
+.cred li:last-child{border:0;padding-bottom:0}
+.cred small{color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:1px}
+.cred strong{color:#fff;font-size:1.02rem}
+
+/* Cards */
+.grid{display:grid;gap:22px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:transform .25s,border-color .25s,box-shadow .25s}
+.card:hover{transform:translateY(-5px);border-color:var(--green);box-shadow:0 16px 40px rgba(0,0,0,.35)}
+.card h3{color:var(--green);font-size:1.15rem;margin-bottom:10px}
+.card.alt h3{color:var(--cyan)}
+.card p{color:var(--text);font-size:.97rem;opacity:.9}
+.icon{width:44px;height:44px;border-radius:12px;background:rgba(16,185,129,.12);border:1px solid var(--line);display:grid;place-items:center;margin-bottom:16px;color:var(--green)}
+.icon svg{width:22px;height:22px}
+.alt-bg{background:var(--bg2);border-block:1px solid rgba(148,163,184,.08)}
+
+/* Workflow */
+.step{position:relative}
+.step .n{font-size:2.4rem;font-weight:800;color:rgba(16,185,129,.35);line-height:1;margin-bottom:12px}
+
+/* Contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.contact .card:hover{transform:none}
+.row{padding:14px 0;border-bottom:1px solid rgba(148,163,184,.12)}
+.row:last-child{border:0}
+.row small{display:block;color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:1px}
+.row a{color:#fff;font-weight:600}
+.row a:hover{color:var(--green)}
+.big{font-size:1.6rem;color:#fff;font-weight:800;margin-bottom:10px}
+
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}
+.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* Reveal animation */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+
+/* Responsive */
+@media (max-width:960px){
+  .hero-grid,.contact{grid-template-columns:1fr}
+  .g3,.g4{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:640px){
+  section{padding:72px 0}
+  .g2,.g3,.g4{grid-template-columns:1fr}
+  .menu-btn{display:block}
+  nav ul{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--line);padding:8px 4%}
+  nav ul.open{display:flex}
+  nav li{width:100%;padding:14px 0;border-bottom:1px solid rgba(148,163,184,.1)}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="#top" class="brand">CARAVAN <span>DISPATCHING</span></a>
+    <nav aria-label="Main">
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+      <ul id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#workflow">Workflow</a></li>
+        <li><a href="#contact" class="btn btn-primary" style="padding:9px 18px;color:#04120d">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="reveal">
+      <span class="tag">Next-Generation Freight Dispatching</span>
+      <h1>CARAVAN DISPATCHING LLC</h1>
+      <p class="sub">Empowering US Owner-Operators &amp; Fleets through Precision Load Matching, Aggressive Rate Negotiation &amp; 24/7 Operational Excellence.</p>
+      <div class="cta">
+        <a href="#contact" class="btn btn-primary">Start Dispatching With Us</a>
+        <a href="#services" class="btn btn-ghost">Our Services</a>
+      </div>
+    </div>
+    <aside class="cred reveal" aria-label="Founder credentials">
+      <h3>Founder &amp; Credentials</h3>
+      <ul>
+        <li><small>Founder</small><strong>Zokirjon Bahodirov</strong></li>
+        <li><small>Professional Body</small><strong>CIPS Affiliate Member (ID: 9985392)</strong></li>
+        <li><small>Education</small><strong>University of Greenwich, BSc Logistics &amp; Supply Chain</strong></li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section id="about" class="alt-bg">
+  <div class="container">
+    <div class="reveal">
+      <span class="tag">About Company</span>
+      <h2>Strategic Vision &amp; Global Foundations</h2>
+      <p class="lead">UK supply chain rigor combined with high-efficiency remote dispatching for the US market.</p>
+    </div>
+    <div class="grid g3">
+      <div class="card reveal"><h3>Vision &amp; Mission</h3><p>To become a leading US dispatching agency by integrating UK academic supply chain rigor (University of Greenwich) with high-efficiency remote dispatching operations.</p></div>
+      <div class="card reveal"><h3>Core Values</h3><p>Integrity, Rate Optimization, Transparency, and Carrier-Centric Support. We treat driver profitability as our highest operational benchmark.</p></div>
+      <div class="card alt reveal"><h3>CIPS Standards</h3><p>Operations structured under CIPS framework guidelines, ensuring world-class procurement ethics, risk mitigation, and carrier contract management.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="reveal">
+      <span class="tag">Our Services</span>
+      <h2>Comprehensive Freight Dispatching Solutions</h2>
+      <p class="lead">Everything a carrier needs to keep trucks loaded, moving and paid.</p>
+    </div>
+    <div class="grid g2">
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
+        <h3>DAT &amp; Truckstop Board Booking</h3><p>Real-time load board navigation, filtering high-RPM loads, lane analysis, and rate forecasting.</p></div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></div>
+        <h3>Broker Rate Negotiation</h3><p>Aggressive price negotiations to maximize gross revenue per mile for dry vans, reefer, and flatbeds.</p></div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></div>
+        <h3>Paperwork &amp; RateCon Management</h3><p>Complete setup: MC/DOT verification, Carrier Packets, Rate Confirmations, and NOA handling.</p></div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>24/7 Driver Support &amp; Dispatch</h3><p>Continuous tracking, check calls, detention management, layover claims, and emergency routing.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="workflow" class="alt-bg">
+  <div class="container">
+    <div class="reveal">
+      <span class="tag">Dispatching Workflow</span>
+      <h2>End-to-End Dispatching Execution</h2>
+      <p class="lead">A clear four-step process from finding the load to keeping the driver supported on the road.</p>
+    </div>
+    <div class="grid g4">
+      <div class="card step reveal"><div class="n">01</div><h3>Load Sourcing</h3><p>DAT/Truckstop search &amp; lane strategy analysis for high gross RPM.</p></div>
+      <div class="card step reveal"><div class="n">02</div><h3>Rate Negotiation</h3><p>Direct negotiations with brokers to secure top-tier rates.</p></div>
+      <div class="card step reveal"><div class="n">03</div><h3>Setup &amp; RateCon</h3><p>Verification, carrier packets, and securing signed Rate Confirmations.</p></div>
+      <div class="card step reveal"><div class="n">04</div><h3>Active Dispatch</h3><p>Real-time driver tracking, check calls, and 24/7 ongoing support.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="reveal">
+      <span class="tag">Contact &amp; Next Steps</span>
+      <h2>Let's Build the Future of Dispatching Together</h2>
+      <p class="lead">Ready to keep your trucks loaded with better-paying freight? Get in touch.</p>
+    </div>
+    <div class="contact">
+      <div class="card reveal">
+        <div class="big">CARAVAN DISPATCHING LLC</div>
+        <div class="row"><small>Founder</small>Zokirjon Bahodirov</div>
+        <div class="row"><small>Credentials</small>CIPS Affiliate Member (ID: 9985392)</div>
+        <div class="row"><small>Education</small>University of Greenwich (BSc Logistics &amp; Supply Chain)</div>
+      </div>
+      <div class="card alt reveal">
+        <div class="big">Reach Out</div>
+        <div class="row"><small>Email</small><a href="mailto:zzb00717@gmail.com">zzb00717@gmail.com</a></div>
+        <div class="row"><small>Phone</small><a href="tel:+447344841009">+44 7344 841009</a></div>
+        <div class="cta" style="margin-top:22px">
+          <a class="btn btn-primary" href="mailto:zzb00717@gmail.com?subject=Dispatching%20Inquiry">Send an Email</a>
+          <a class="btn btn-ghost" href="tel:+447344841009">Call Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container foot">
+    <span>&copy; <span id="year">2026</span> Caravan Dispatching LLC. All rights reserved.</span>
+    <span>Founder: Zokirjon Bahodirov</span>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu
+  const btn = document.getElementById('menuBtn'), menu = document.getElementById('menu');
+  btn.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+  });
+  menu.addEventListener('click', e => { if (e.target.tagName === 'A') menu.classList.remove('open'); });
+
+  // Scroll reveal
+  const items = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, { threshold: 0.12 });
+    items.forEach(el => io.observe(el));
+  } else { items.forEach(el => el.classList.add('in')); }
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
